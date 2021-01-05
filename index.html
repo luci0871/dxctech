@@ -21,18 +21,33 @@
 <body>
   <header>
     <nav class="menu-area">
-      <ul>
-
-        <li><img class="logo" src="images/logo.png" alt="logo" /></li>
-        <li>home</li>
-        <li>about</li>
-        <li>contact</li>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>   
+  <ul class="menu">
+    <li><img class="logo" src="images/logo.png" alt="logo" /></li> 
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#formbottom">
-        <button class="sub1">Subscribe for more information</button>
+        <button class="sub1">Subscribe </button>
       </a>
 
-    </nav>
+    </nav> 
+
+  <!-- <div class="header">
+  <li><img class="logo" src="images/logo.png" alt="logo" /></li>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#formbottom">
+      <button class="sub1">Subscribe</button>
+    </a></li>
+  </ul>
+</div> /-->
 
     <div class="banner-text">
       <h2>DXC Business Intelligence for Microsoft</h2>
@@ -113,9 +128,9 @@
         <div id="name">
           <h2 class="name">Name</h2>
           <input class="firstname" type="text" name="first_name"><br>
-          <label class="firstlabel">first name</label>
+          <label class="firstlabel">First name</label>
           <input class="lastname" type="text" name="last_name">
-          <label class="lastlabel">last name</label>
+          <label class="lastlabel">Last name</label>
         </div>
         <h2 class="name">Job Title</h2>
         <input class="company" type="text" name="company">
@@ -125,7 +140,7 @@
 
         <h2 class="name"> Phone</h2>
         <input class="code" type="text" name="area_code">
-        <label class="area-code">Area Code</label>
+       <label class="area-code">Area Code</label>
         <input class="number" type="text" name="phone">
         <label class="phone-number">Phone Number</label>
 
