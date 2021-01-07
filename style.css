@@ -40,7 +40,9 @@
   .logo {
     width: 150px;
     height: auto;
-    margin-right: -20px;
+    margin-right: -30px;
+    margin-top: -40px;
+  
   }
   .DXC {
     text-transform: uppercase;
@@ -437,29 +439,35 @@ button:hover {
 /* header */
 
 .menu-area {
-  background-color: transparent;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background: rgba(0, 0, 0, 85%);
+  margin: 40px;
+  padding: 10px;
   position: fixed;
-  width: 100%;
-  z-index: 3;
-  color: white;
+  width: -webkit-fill-available;
+  z-index: 5;
 }
 
-.menu-area ul {
+
+/*.menu-area ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: transparent;
-  color: white;
-}
+  background-color: rgba(255, 255, 255, 85%);
+  color: black;
+  z-index: 5;
+}*/
 
 .menu-area li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid black(255, 255, 255, 85%);
   text-decoration: none;
   color: white;
+  margin-left: 70px;
 }
 
 
