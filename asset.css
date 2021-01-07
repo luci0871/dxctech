@@ -1,0 +1,207 @@
+@use 'css/reset';
+
+@use 'partials/base' as *;
+@use 'partials/components';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5vw;
+  grid-row-gap: 4vw;
+  // grid-auto-rows: minmax(60px, auto);
+  grid-template-areas:
+    "header header"
+    "title title"
+    "title-p title-p"
+    "advantages advantages"
+    "optimize flexible"
+    "optimize deliver"
+    "data-model data-model"
+    "data-model-p data-model-p"
+    "features features"
+    "companies prerequisite"
+    "getup learnmore"
+    "footer footer";
+  margin: 0 30px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > * {
+    margin: 0 3vw;
+  }
+
+  img {
+    width: 15vw;
+    height: auto;
+  }
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+  h1 {
+    font-family: BoldFont;
+    font-size: 3em;
+  }
+  h2 {
+    margin: 1vw 0;
+    font-size: 2em;
+  }
+  img {
+    margin: 2vw;
+  }
+}
+.title-p {
+  grid-area: title-p;
+  font-size: 2em;
+  font-weight: 550;
+}
+.advantages {
+  grid-area: advantages;
+  @include asset-list;
+}
+.optimize {
+  grid-area: optimize;
+  @include asset-topic;
+}
+.flexible {
+  grid-area: flexible;
+  @include asset-topic;
+}
+.deliver {
+  grid-area: deliver;
+  @include asset-topic;
+
+  ul {
+    margin-left: 10%;
+    font-size: 1.5em;
+  }
+}
+.data-model {
+  grid-area: data-model;
+  text-align: center;
+  @include asset-topic;
+
+  h2 {
+    margin: 5vw 0;
+  }
+}
+.data-model-p {
+  grid-area: data-model-p;
+  @include asset-topic;
+}
+.features {
+  grid-area: features;
+  @include asset-list;
+}
+.companies {
+  grid-area: companies;
+  @include asset-topic;
+}
+.prerequisite {
+  grid-area: prerequisite;
+  @include asset-topic;
+
+  ul {
+    padding: 1vw;
+  }
+
+  ul li {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+}
+.getup {
+  grid-area: getup;
+  @include asset-topic;
+}
+.learnmore {
+  grid-area: learnmore;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  p {
+    font-family: BoldFont;
+    font-size: 3vw;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  img {
+    width: 3vw;
+  }
+
+  @include simple-link;
+}
+.footer {
+  grid-area: footer;
+  margin-top: 10vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-bottom: 100px;
+  background-color: #ddd;
+  div {
+    max-width: 60%;
+  }
+  @include simple-link;
+  span {
+    text-decoration: underline;
+  }
+}
+
+.sub-info {
+  color: red;
+}
+
+.sub-info-box {
+  position: absolute;
+  padding: 5px;
+  font-style: italic;
+  width: 80%;
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 15px;
+  z-index: 1;
+  &::before {
+    content: " ※ ";
+  }
+}
+
+#topBtn {
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+    transition: ease-in 0.5s;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.pdf-icon{
+  width: 30px;
+}
+
+.learnmore{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
