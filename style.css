@@ -188,7 +188,7 @@ header {
 body { 
   background-image: url(images/bg.jpg);
   background-position: center; 
-  background-size: cover; 
+  background-size: cover;
   font-family: san-serif;
   margin-top: 40px;
 }
