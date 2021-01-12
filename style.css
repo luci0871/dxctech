@@ -398,16 +398,14 @@ button:hover {
 
 .grid-container {
   display: grid;
+  margin: 650px;
   max-width: 1500px;
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px 0px;*/
   margin-top: 600px;
   grid-gap: 1rem;
-  /*grid-template-areas:
-    ". ."
-    ". ."
-    ". .";*/
+  grid-template-areas: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 50px;
+  grid-column-gap: 150px;
 }
 
 .grid-item {
