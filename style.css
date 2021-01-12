@@ -54,38 +54,6 @@
     display: none;
   }
 
-
-/*header
-.menu-area{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex; 
-  background: transparent;
-  color: white;
-  padding: 1em;
-  
-}
-
-.menu-area > ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex; 
-  flex: 3;
-  
-}
-
-.menu-area li{
-  margin-right: 1em;
-  cursor: pointer;
-}
-*/
 ul li:nth-child(1){
   font-size: 30px;
   text-transform: uppercase;
@@ -449,17 +417,6 @@ button:hover {
   width: -webkit-fill-available;
   z-index: 5;
 }
-
-
-/*.menu-area ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 85%);
-  color: black;
-  z-index: 5;
-}*/
 
 .menu-area li a {
   display: block;
